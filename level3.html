@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Memory Game</title>
+	<meta charset="utf-8" />
+<!-- 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+-->	<link rel="stylesheet" href="assets/css/style3.css">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<link rel="stylesheet" href="assets/css/main.css" />
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<style>
+	.transparent-style{
+
+		background-color: #ffffff;
+		opacity: .4;
+
+	}
+	.bmargin {
+		margin: 4px 2px;
+		background-color: #EFC050;
+	}
+	.gmargin {
+		margin: auto;
+	}
+	.blacktext {
+		color: black;
+	}
+	.middlesection {
+		text-align:justify;
+	}
+	.header {
+		background-color: #FFFF00;
+		color: #ffffff;
+		padding: 10px;
+	}
+</style>
+<body class="is-preload">
+
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="gmargin">
+		<header>
+							<!-- <span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<h1>Jane Doe</h1>
+							<p>Senior Psychonautics Engineer</p> -->
+							<div>
+								<div class="header transparent-style" style="text-align: center; font-family: Arial; font-weight: bold;">
+									<h1 class="blacktext">Memory Game - Change Difficulty Level</h1>
+								</div>
+								<div class="col-3 col-s-3 menu gmargin" style="text-align: center;">
+									<button class="bmargin" onclick="location.href = 'level1.html';">Level 1 : 16 (4x4)</button>
+									<button class="bmargin" onclick="window.location.href = 'level2.html';">Level 2 : 24 (4x6)</button>
+									<button class="bmargin" onclick="window.location.href = 'level3.html';">Level 3 : 36 (6x6)</button>
+									<button class="bmargin" onclick="window.location.href = 'level4.html';">Level 4 : 48 (8x6)</button>  
+									<button class="bmargin" onclick="window.location.href = 'index.html';">Back</button>
+								</div>
+							</div>
+						</header>
+
+						<section class="memory-game">
+							<div class="memory-card" data-framework="black2">
+								<img class="front-face" src="img/2_of_clubs.png" alt="2 of clubs" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="black2">
+								<img class="front-face" src="img/2_of_clubs.png" alt="2 of clubs" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="red2">
+								<img class="front-face" src="img/2_of_diamonds.png" alt="2 of diamonds" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="red2">
+								<img class="front-face" src="img/2_of_diamonds.png" alt="2 of diamonds" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="red2">
+								<img class="front-face" src="img/2_of_hearts.png" alt="2 of hearts" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="red2">
+								<img class="front-face" src="img/2_of_hearts.png" alt="2 of hearts" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>	
+							<div class="memory-card" data-framework="black2">
+								<img class="front-face" src="img/2_of_spades.png" alt="2 of spades" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="black2">
+								<img class="front-face" src="img/2_of_spades.png" alt="2 of spades" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>	
+							<div class="memory-card" data-framework="red4">
+								<img class="front-face" src="img/4_of_diamonds.png" alt="4 of diamonds" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="red4">
+								<img class="front-face" src="img/4_of_diamonds.png" alt="4 of diamonds" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="black4">
+								<img class="front-face" src="img/4_of_clubs.png" alt="4 of clubs" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="black4">
+								<img class="front-face" src="img/4_of_clubs.png" alt="4 of clubs" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>		
+							<div class="memory-card" data-framework="red4">
+								<img class="front-face" src="img/4_of_hearts.png" alt="4 of hearts" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="red4">
+								<img class="front-face" src="img/4_of_hearts.png" alt="4 of hearts" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>	
+							<div class="memory-card" data-framework="black4">
+								<img class="front-face" src="img/4_of_spades.png" alt="4 of spades" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="black4">
+								<img class="front-face" src="img/4_of_spades.png" alt="4 of spades" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>	
+
+							<div class="memory-card" data-framework="red5">
+								<img class="front-face" src="img/5_of_hearts.png" alt="5 of hearts" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="red5">
+								<img class="front-face" src="img/5_of_hearts.png" alt="5 of hearts" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>	
+							<div class="memory-card" data-framework="black5">
+								<img class="front-face" src="img/5_of_spades.png" alt="5 of spades" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="black5">
+								<img class="front-face" src="img/5_of_spades.png" alt="5 of spades" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="red5">
+								<img class="front-face" src="img/5_of_diamonds.png" alt="5 of diamonds" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="red5">
+								<img class="front-face" src="img/5_of_diamonds.png" alt="5 of diamonds" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="black5">
+								<img class="front-face" src="img/5_of_clubs.png" alt="5 of clubs" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="black5">
+								<img class="front-face" src="img/5_of_clubs.png" alt="5 of clubs" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>			
+							<div class="memory-card" data-framework="red6">
+								<img class="front-face" src="img/6_of_hearts.png" alt="6 of hearts" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="red6">
+								<img class="front-face" src="img/6_of_hearts.png" alt="6 of hearts" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="black6">
+								<img class="front-face" src="img/6_of_spades.png" alt="6 of spades" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="black6">
+								<img class="front-face" src="img/6_of_spades.png" alt="6 of spades" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="red6">
+								<img class="front-face" src="img/6_of_diamonds.png" alt="6 of diamonds" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="red6">
+								<img class="front-face" src="img/6_of_diamonds.png" alt="6 of diamonds" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="black6">
+								<img class="front-face" src="img/6_of_clubs.png" alt="6 of clubs" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="black6">
+								<img class="front-face" src="img/6_of_clubs.png" alt="6 of clubs" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>		
+
+							<div class="memory-card" data-framework="red9">
+								<img class="front-face" src="img/9_of_diamonds.png" alt="9_of_diamonds.png" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="red9">
+								<img class="front-face" src="img/9_of_diamonds.png" alt="9_of_diamonds.png" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="red10">
+								<img class="front-face" src="img/10_of_diamonds.png" alt="10_of_diamonds" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+							<div class="memory-card" data-framework="red10">
+								<img class="front-face" src="img/10_of_diamonds.png" alt="10_of_diamonds" />
+								<img class="back-face" src="img/cards.png" alt="Cards Image" />
+							</div>
+						</section>
+						<!-- Footer -->
+						<footer id="footer">
+							<ul class="copyright">
+								<li></li>
+							</ul>
+						</footer>
+
+					</div>
+					<script src="scripts.js"></script>
+					<!-- Scripts -->
+					<script>
+						if ('addEventListener' in window) {
+							window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+							document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+						}
+					</script>
+
+				</body>
+				</html>

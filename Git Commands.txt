@@ -1,0 +1,13 @@
+
+
+Git Commands
+
+git config --global core.autocrlf false
+git clone https://github.com/dmathews0101/MemoryGame.git
+ls
+cd MemoryGame
+ls
+git status
+git add .
+git commit -m "first commit"
+git push
